@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 2px solid #d2d2d2;
+}
+
+.brand-logo {
+    color: #DC8E0A;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.mid-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 4px 10px;
+    transition: all 0.4s;
+    border-radius: 20px;
+    position: relative;
+}
+
+.menu:hover {
+    background-color: #f3efef;
+    cursor: pointer;
+}
+
+
+.account-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#check-btn {
+    display: none;
+    position: relative;
+    left: 60px;
+}
+
+#check {
+    display: none;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 15px;
+}
+.message-1 {
+    margin: 30px auto;
+    padding: 4px 12px;
+    border: 1px solid #afadad;
+    width: fit-content;
+    border-radius: 20px;
+    color: gray;
+    text-align: center;
+}
+
+.message-2 {
+    margin: 10px auto;
+    font-size: 70px;
+    width: fit-content;
+}
+
+.message-3 {
+    margin: 10px auto;
+    width: 65%;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+.get-started,
+.get-started-2,
+.get-started-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #F59E0B;
+    width: fit-content;
+    padding: 10px 26px;
+    border-radius: 15px;
+    margin: 15px auto;
+    color: white;
+    border: none;
+    transition: all 0.3s linear;
+}
+
+.get-started-2 {
+    background-color: #1172ae;
+}
+
+.get-started-3 {
+    background-color: #078259;
+}
+
+.get-started a,
+.get-started-2 a,
+.get-started-3 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.get-started:hover,
+.get-started-2:hover,
+.get-started-3:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+
+/* Card Section */
+
+.card-container {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card,
+.card-2,
+.card-3 {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border: 2px groove #F59E0B;
+    border-radius: 15px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.3s linear;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 2px 1px #DC8E0A;
+}
+
+.card-2:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 2px 1px #1172ae;
+}
+
+.card-3:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 2px 1px #078259;
+}
+
+.card-2 {
+    border: 2px groove #1172ae;
+}
+
+.card-3 {
+    border: 2px groove #078259;
+}
+.content, .content-2, .content-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 20px;
+    background-color: #f6eedf;
+}
+
+.content-2 {
+    background-color: #9edaf9;
+}
+
+.content-3 {
+    background-color: #b2fce4;
+}
+.content h3,
+.content-2 h3,
+.content-3 h3 {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content-2 h3 {
+    color: #1172ae;
+}
+
+.content-3 h3 {
+    color: #078259;
+}
+.content p,
+.content-2 p,
+.content-3 p {
+    font-size: 20px;
+    color: gray;
+}
+
+.icon-box, .icon-box-2, .icon-box-3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    overflow: hidden;
+    padding: 4px;
+    border: 10px solid #fbeed5;
+}
+
+.icon-box-2 {
+    border:10px solid #9edaf9;
+}
+
+.icon-box-3 {
+    border: 10px solid #b2fce4;
+}
+
+.logo {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width : 850px) {
+    .message-1 {
+        width: 100%;
+    }
+    .message-2 {
+        font-size: 50px;
+    }
+
+    .message-3 {
+        width: 100%;
+        text-align: center;
+        letter-spacing: normal;
+    }
+
+    .mid-menu{
+        position: absolute;
+        top: 70px;
+        right: -210px;
+        padding: 4px 4px;
+        background-color: white;
+        flex-direction: column;
+        z-index: 2;
+        align-items: flex-start;
+        box-shadow: 0 0 8px rgba(0,0,0,0.3);
+        border-radius: 8px;
+        transition: all 0.4s linear;
+    }
+
+    .right-menu {
+        float: right;
+        background-color: r;
+    }
+    #check-btn {
+        display: block;
+        font-size: 25px;
+    }
+    .mid-menu {
+        gap: 2px;
+    }
+    .menu {
+        width: 100%;
+        border-radius:0%;
+        padding: 12px 10px;
+        gap: 5px;
+       
+    }
+
+    .menu:hover {
+        background-color: #e6e6e6;
+    }
+
+    .card-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .card,
+    .card-2,
+    .card-3 {
+        width: 100%;
+    }
+
+   #check:checked ~ .mid-menu {
+    right: 10px;
+   }
+}
