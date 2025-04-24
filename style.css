@@ -5,6 +5,39 @@
     font-family: sans-serif;
 }
 
+:root{
+    --bg-color:white;
+    --text-color:black ;
+    --p-text:gray   ;
+    --border:#d2d2d2;
+    --hover:#f3efef;
+    --hover-mobile:#e6e6e6;
+    --small-text:black;
+  
+    
+}
+.dark-mode{
+    --bg-color:#121212;
+    --text-color:#D3D3D3 ;
+    --p-text:#808080;
+    --nav-background:#121212;
+    --hover:#726464;
+    --hover-mobile:#726464;
+    --small-text:white;
+    
+
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.small{
+    color:var(--small-text);
+}
+
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -38,7 +71,7 @@
 }
 
 .menu:hover {
-    background-color: #f3efef;
+    background-color: var(--hover);
     cursor: pointer;
 }
 
@@ -52,7 +85,7 @@
 #check-btn {
     display: none;
     position: relative;
-    left: 60px;
+    left:100px;
 }
 
 #check {
@@ -66,6 +99,50 @@
     column-gap: 10px;
 }
 
+
+/* Dark Mode */
+
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color:var(--bg-color) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    /* top: 20px;
+    right: 20px; */
+}
+
+#theme-switch svg{
+    fill: black;
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+
+.dark-mode #theme-switch svg:last-child{
+    display: block;
+
+}
+
+.dark-mode #theme-switch svg:first-child{
+    display: none;
+
+}
+
+.dark-mode #theme-switch {
+    /* fill: var(--bg-color); */
+    background-color: white;
+}
+
+
+
 /* Hero Section */
 .hero-section {
     padding: 15px;
@@ -76,7 +153,7 @@
     border: 1px solid #afadad;
     width: fit-content;
     border-radius: 20px;
-    color: gray;
+    color: var(--p-text);
     text-align: center;
 }
 
@@ -92,7 +169,7 @@
     text-align: center;
     font-size: 20px;
     letter-spacing: 1px;
-    color: grey;
+    color: var(--p-text);
 }
 
 .get-started,
@@ -277,7 +354,7 @@
         top: 70px;
         right: -210px;
         padding: 4px 4px;
-        background-color: white;
+        background-color: var(--bg-color);
         flex-direction: column;
         z-index: 2;
         align-items: flex-start;
@@ -288,11 +365,13 @@
 
     .right-menu {
         float: right;
-        background-color: r;
+        /* background-color: r; */
+        display: none;
     }
     #check-btn {
         display: block;
         font-size: 25px;
+       
     }
     .mid-menu {
         gap: 2px;
@@ -306,7 +385,7 @@
     }
 
     .menu:hover {
-        background-color: #e6e6e6;
+        background-color: var(--hover-mobile);
     }
 
     .card-container {
@@ -323,4 +402,5 @@
    #check:checked ~ .mid-menu {
     right: 10px;
    }
+
 }
