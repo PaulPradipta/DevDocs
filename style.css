@@ -12,8 +12,9 @@
     --border:#d2d2d2;
     --hover:#f3efef;
     --hover-mobile:#e6e6e6;
-    --base-vairant:#e8898d;
-    --primary-color:#3a435d;
+    --small-text:black;
+  
+    
 }
 .dark-mode{
     --bg-color:#121212;
@@ -22,13 +23,20 @@
     --nav-background:#121212;
     --hover:#726464;
     --hover-mobile:#726464;
-    --base-vairant:#101425;
-    --primary-color:#3a435d;
+    --small-text:white;
+    
+
 }
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+
+.small{
+    color:var(--small-text);
+}
+
+
 
 .navbar {
     display: flex;
